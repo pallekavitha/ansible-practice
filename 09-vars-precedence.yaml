@@ -11,6 +11,6 @@
   tasks:
   - name: variable at task level
     vars:
-      NAME: Kavitha-task
+      NAME: sivakumar-task
     ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
