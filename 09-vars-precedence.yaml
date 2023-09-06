@@ -10,7 +10,5 @@
     private: false
   tasks:
   - name: variable at task level
-    vars:
-      NAME: sivakumar-task
     ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
