@@ -2,7 +2,7 @@
 45.254.25.16
 
 [mongodb]
-roboshop-us-dev-db-mongodb-01.joindevops.live
+172.31.46.58
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
