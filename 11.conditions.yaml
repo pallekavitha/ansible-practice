@@ -1,0 +1,14 @@
+- name: create user
+  hosts: localhost
+  tasks:
+  - name: check roboshop user exist or not
+    # when you want ti run linux coomands directly i.e., in this case ansible module not availabl
+    # when the user does not exists, ansible treating this failure and comeout by default
+    # ignore_errors: true
+    ansible.builtin.command: id roboshop
+    register: output #output is variable name
+    ignore_errors: true
+
+  - name: print the command output
+    ansible.builtin.debug:
+      msg: "output is:{{output}}"
